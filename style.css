@@ -275,7 +275,176 @@ button {
 
 /* info section end */
 /* icon style  start*/
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.home h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.home p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.location {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.location h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.location p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+.price {
+    margin-left: 30%;
+    margin-right: 20%;
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.price h3 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.price p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
 /* icon style end */
+/* news section start */
+.news {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news>.news-input {
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    height: 390px;
+}
+
+.news-input input {
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.news-input,
+input,
+.subs {
+    padding: 10px;
+    width: 80%;
+}
+
+
+.news-input,
+input {
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+}
+
+.news-input h2 {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.news-input p {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.news-img {
+    margin-right: 500px;
+}
+
+
+.fix-img {
+    position: absolute;
+    margin-left: 90px;
+}
+
+.save {
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.travel {
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.fix-text {
+    position: relative;
+    top: 250px;
+    left: 400px;
+    transform: rotate(-19.628deg);
+    width: 250px;
+    height: 120px;
+
+}
+
+/* news section end */
 /* resposive style */
 @media screen and (max-width:600px) {
     * {
@@ -416,6 +585,90 @@ button {
     .item-seven {
         grid-column: 1/span 1;
     }
+
+    .icon-container {
+        flex-direction: column;
+    }
+
+    .home {
+        padding: 5px;
+    }
+
+    .location {
+        padding: 5px;
+    }
+
+    .price {
+        padding: 5px;
+        margin: 0;
+    }
+
+    .news {
+        flex-direction: column;
+    }
+
+    .news>.news-input {
+        padding: 15px;
+        border-radius: 16px;
+        border: 1px solid #FF5400;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .news-input,
+    input {
+        height: 20px;
+        border-radius: 8px;
+        border: none;
+    }
+
+    .news-input,
+    input,
+    .subs {
+        margin-top: 5px;
+    }
+
+    .news-img {
+        margin-top: 10px;
+
+    }
+
+    .news-img img {
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    .fix-img {
+        position: absolute;
+    }
+
+    .fix-text {
+        position: relative;
+        top: 99px;
+        left: 180px;
+        height: 80px;
+        width: 170px;
+    }
+
+    .travel {
+        color: #FFF;
+        text-align: center;
+        font-family: Mulish;
+        font-size: 15.854px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .save {
+        color: #FFF;
+        font-family: Mulish;
+        font-size: 21.138px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
 }
 
 /* resposive style */
