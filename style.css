@@ -9,6 +9,10 @@ body {
 }
 
 /* nav section start */
+.head-img img{
+    height: 10px;
+    vertical-align: middle;
+}
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -27,12 +31,6 @@ body {
     font-weight: 800;
     line-height: normal;
 }
-
-.head-img {
-    position: relative;
-    top: 15px;
-}
-
 .nav-section,
 ul,
 li {
@@ -445,6 +443,60 @@ input {
 }
 
 /* news section end */
+/* footer section start */
+footer {
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.h {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.t {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+footer p {
+    color: #5A5A5D;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.foot {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+    color: #131318;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* footer section end */
 /* resposive style */
 @media screen and (max-width:600px) {
     * {
@@ -507,16 +559,27 @@ input {
         width: 350px;
         padding: 15px;
     }
+    .explore-input .text{
+        width: 150px;
+        height: 20px;
+    }
+    .explore-input .select{
+        width: 170px;
+        height: 40px;
+    }
+    .explore-input .btn{
+        width: 170px;
+    }
 
     .explore-input,
     .text,
     .select,
     button {
-        margin-top: 10px;
+        margin-top: 8px;
     }
 
     .explore-input {
-        width: 220px;
+        width: 250px;
         margin: 0 auto;
     }
 
@@ -664,6 +727,32 @@ input {
         color: #FFF;
         font-family: Mulish;
         font-size: 21.138px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+    footer{
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .i {
+        height: 25px;
+    }
+
+    .h {
+        color: #131318;
+        font-family: Mulish;
+        font-size: 21.543px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+    }
+
+    .t {
+        color: #FF5400;
+        font-family: Mulish;
+        font-size: 21.543px;
         font-style: normal;
         font-weight: 800;
         line-height: normal;
