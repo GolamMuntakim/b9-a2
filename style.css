@@ -315,7 +315,32 @@ button {
     grid-row: 5/span 2;
 }
 
+/* grid end */
+/* own creation start */
+.own{
+    font-family: Mulish;
+    text-align: center;
+}
+.slider{
+    width: 60rem;
+    height: 25rem;
+    background: url(./Images/Rectangle\ 5.png)no-repeat;
+    margin:0 33%;
+    animation:slider 20s infinite;
+}
+@keyframes slider {
+    25%{
+        background: url('./Images/Rectangle\ 8.png') no-repeat;
+    }
+    75%{
+        background: url('./Images/Rectangle\ 7.png') no-repeat;
+    }
+    100%{
+        background: url('./Images/Rectangle\ 6.png') no-repeat;
+    }
 
+}
+/* own creation end */
 
 
 /* info section start */
@@ -678,8 +703,9 @@ h5 {
     }
 
 
-    .read-img {
-        width: 50px;
+    .read-img img{
+        border-radius: 10px;
+        width:381px;
     }
 
     .un,
@@ -730,6 +756,13 @@ h5 {
     .item-seven {
         grid-column:1/span 1;
         grid-row:7/span 1;
+    }
+    
+    .slider{
+        width:380px;
+        border-radius: 10px;
+        height: 200px;
+        margin:0 2px;
     }
 
     .icon-container {
