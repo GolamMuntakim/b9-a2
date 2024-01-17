@@ -144,6 +144,7 @@ button {
     border: none;
     width: 150px
 }
+/* explore end */
 
 .read {
     display: flex;
@@ -153,9 +154,7 @@ button {
     color: #131318;
     font-family: Mulish;
     font-size: 40px;
-    font-style: normal;
     font-weight: 800;
-    line-height: normal;
 }
 
 .read-pera {
@@ -173,10 +172,8 @@ button {
     color: rgba(19, 19, 24, 0.70);
     font-family: Mulish;
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 26px;
-
 }
 
 .read-btn {
@@ -500,14 +497,20 @@ h5 {
 /* resposive style */
 @media screen and (max-width:600px) {
     * {
-        margin: 0;
+        margin:0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 1px solid black; */
+        /* width: 100%; */
 
     }
 
-    .nav-container {
+    .nav-container{
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
+  
 
     .head-img {
         height: 35px;
@@ -525,7 +528,7 @@ h5 {
     ul,
     li,
     a {
-        margin-left: 0px;
+        /* margin-left: 0px; */
     }
 
     .hero {
@@ -538,14 +541,16 @@ h5 {
     }
 
     .nav-title {
-        margin-bottom: 50px;
-        margin-left: 120px;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+
     }
 
     .nav-section,
     ul {
         display: flex;
-        gap: 5px;
+        gap: 1px;
     }
 
     .item {
@@ -555,12 +560,14 @@ h5 {
     }
 
     .explore {
-        width: 350px;
+        width: 370px;
         padding: 15px;
+        margin: 0 15px;
     }
     .explore-input .text{
-        width: 150px;
-        height: 20px;
+        width: 170px;
+        height: 40px;
+        padding: 0;
     }
     .explore-input .select{
         width: 170px;
@@ -578,7 +585,7 @@ h5 {
     }
 
     .explore-input {
-        width: 250px;
+        width: 300px;
         margin: 0 auto;
     }
 
@@ -591,20 +598,23 @@ h5 {
 
     .read {
         flex-direction: column;
+        flex-wrap: wrap;
     }
+    .read p{
+        width: 380px;
+    }
+   
 
     .read-img {
-        width: 140px;
-        margin: 0;
+        width: 50px;
     }
 
     .un,
-    li,
-    p {
-        display: block;
+    li{
+        display:inline;
+        list-style:;
         list-style-type: circle;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 0 2px;
     }
 
     .read-btn {
@@ -613,8 +623,6 @@ h5 {
 
     .read-img {
         margin-top: 10px;
-        margin-left: 5px;
-        margin-right: 5px;
     }
 
     .image-container {
