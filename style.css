@@ -454,7 +454,7 @@ footer {
     align-items: center;
 }
 
-.h {
+.h{
     color: #131318;
     font-family: Mulish;
     font-size: 32px;
@@ -463,7 +463,7 @@ footer {
     line-height: normal;
 }
 
-.t {
+.t{
     color: #FF5400;
     font-family: Mulish;
     font-size: 32px;
@@ -698,11 +698,12 @@ h5 {
 
     .news-img img {
         height: 250px;
-        margin: 0 auto;
+        margin: 0 8px;
     }
 
     .fix-img {
         position: absolute;
+        
     }
 
     .fix-text {
