@@ -501,6 +501,7 @@ h5 {
 @media screen and (max-width:600px) {
     * {
         margin: 0;
+
     }
 
     .nav-container {
@@ -517,16 +518,14 @@ h5 {
         color: #131318;
         font-family: Mulish;
         font-size: 21.543px;
-        font-style: normal;
         font-weight: 800;
-        line-height: normal;
     }
 
     .nav-section,
     ul,
     li,
     a {
-        margin-left: 1px;
+        margin-left: 0px;
     }
 
     .hero {
@@ -546,7 +545,7 @@ h5 {
     .nav-section,
     ul {
         display: flex;
-        gap: 12px;
+        gap: 5px;
     }
 
     .item {
@@ -595,7 +594,8 @@ h5 {
     }
 
     .read-img {
-        width: 1800px;
+        width: 140px;
+        margin: 0;
     }
 
     .un,
